@@ -1,0 +1,28 @@
+﻿Build started 02.06.2024 17:44:19.
+     1>Project "C:\Projects\Eco.Lab4\Eco.TaskScheduler1Lab\AssemblyFiles\BCM283x\gcc_7_5_0\Eco.TaskScheduler1Lab.vcxproj" on node 2 (build target(s)).
+     1>Build:
+         make
+         C:\Users\antip\Downloads\toolchain/gcc-linaro-7.5.0/bin/aarch64-elf-gcc -I ../../../HeaderFiles -I ../../../SharedFiles -I C:\Users\antip\Downloads\Eco.Framework_20230409\Eco.Framework/Eco.Core1/SharedFiles -I C:\Users\antip\Downloads\Eco.Framework_20230409\Eco.Framework/Eco.InterfaceBus1/SharedFiles -I C:\Users\antip\Downloads\Eco.Framework_20230409\Eco.Framework/Eco.Timer1/SharedFiles -I C:\Users\antip\Downloads\Eco.Framework_20230409\Eco.Framework/Eco.MemoryManager1/SharedFiles -Wall -std=gnu89 -Wno-missing-braces -march=armv8-a+simd -mtune=cortex-a53 -mstrict-align -fno-tree-loop-vectorize -fno-tree-slp-vectorize -DECO_BCM283X -DECO_LIB -DUGUID_UTILITY -c ..\\..\\..\\SourceFiles\\CEcoTaskScheduler1Lab.c -o ..\\..\\..\\SourceFiles\\CEcoTaskScheduler1Lab.o
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c: In function 'CEcoTaskScheduler1Lab_C761620F_InitWith':
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c:265:13: warning: unused variable 'result' [-Wunused-variable]
+              int16_t result = -1;
+                      ^~~~~~
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c: In function 'CEcoTaskScheduler1Lab_C761620F_NewTask':
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c:318:62: warning: dereferencing 'void *' pointer
+             g_xCEcoTask1List_C761620F[indx].runtime = (uint32_t*)&data[0];
+                                                                       ^
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c:318:57: warning: taking address of expression of type 'void'
+             g_xCEcoTask1List_C761620F[indx].runtime = (uint32_t*)&data[0];
+                                                                  ^
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c:318:44: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+             g_xCEcoTask1List_C761620F[indx].runtime = (uint32_t*)&data[0];
+                                                     ^
+         ..\..\..\SourceFiles\CEcoTaskScheduler1Lab.c:319:26: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+                      pxTopOfStack = g_xCEcoTask1List_C761620F[indx].m_sp;
+                                   ^
+         C:\Users\antip\Downloads\toolchain/gcc-linaro-7.5.0/bin/aarch64-elf-ar -rcs ..\\..\\..\\BuildFiles\\BCM283x\\arm64-v8a\\StaticRelease\\lib902ABA722D34417BB714322CC761620F.a ..\\..\\..\\SourceFiles\\CEcoTask1Lab.o ..\\..\\..\\SourceFiles\\CEcoTaskScheduler1Lab.o ..\\..\\..\\SourceFiles\\CEcoTaskScheduler1LabFactory.o
+     1>Done Building Project "C:\Projects\Eco.Lab4\Eco.TaskScheduler1Lab\AssemblyFiles\BCM283x\gcc_7_5_0\Eco.TaskScheduler1Lab.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.62
